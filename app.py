@@ -56,7 +56,8 @@ def generar_tabla(expr_norm):
         return [], pd.DataFrame()
     
     tabla = []
-    for valores in product([0, 1], repeat=len(variables)):
+    # Cambiado a [1, 0] para que la tabla comience con Verdadero (1) arriba
+    for valores in product([1, 0], repeat=len(variables)):
         entorno = dict(zip(variables, valores))
         try:
             resultado = int(bool(eval(expr_norm, {"__builtins__": None}, entorno)))
