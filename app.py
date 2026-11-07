@@ -3,7 +3,7 @@ import re
 from itertools import product
 import pandas as pd
 
-st.set_page_config(title="Calculadora Tabla de la Verdad", layout="centered")
+st.set_page_config(page_title="Calculadora Tabla de la Verdad", layout="centered")
 
 st.title("🧮 Calculadora de Tabla de la Verdad")
 st.markdown("Construye tu expresión haciendo clic. El resultado se muestra en $0$ y $1$.")
